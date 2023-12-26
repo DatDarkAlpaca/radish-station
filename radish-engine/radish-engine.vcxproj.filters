@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{2EB4837C-1AEB-840D-C3D7-6A10AFED000F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Engine">
+      <UniqueIdentifier>{F35E8B73-5F14-0469-E808-FE3F54BDFA6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Event">
+      <UniqueIdentifier>{FF1F37CD-EBD7-781A-54DF-517640B6130B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Event\KeyboardEvents">
+      <UniqueIdentifier>{14132094-80D5-531E-C985-E2AA35872CFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Event\MouseEvents">
+      <UniqueIdentifier>{4C705E2A-386A-877C-21D7-1D8D0D70EDE8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Event\WindowEvents">
+      <UniqueIdentifier>{FB484122-6780-89B9-708A-EDDCDC40B0B2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Logger">
+      <UniqueIdentifier>{3D8AF183-A93F-6A79-3234-64509EE8607D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Memory">
+      <UniqueIdentifier>{D62B9585-42E1-0D7B-CBD5-0752378A047F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\View">
+      <UniqueIdentifier>{58F5C415-C45F-798C-0D9E-2A32794757E1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Window">
+      <UniqueIdentifier>{5581319D-C136-AA92-4A2B-A469B6DFA096}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{1653CE33-0220-293F-2B39-17E717655ECD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\OpenGL">
+      <UniqueIdentifier>{8AE717A8-F672-856C-FF83-08616B8EE16C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Common.h" />
+    <ClInclude Include="src\Core\Defines.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Engine\RadishEngine.h">
+      <Filter>Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Event\Event.h">
+      <Filter>Core\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Event\EventType.h">
+      <Filter>Core\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Event\Events.h">
+      <Filter>Core\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Event\GLFW_Events.h">
+      <Filter>Core\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Event\KeyboardEvents\KeyPressedEvent.h">
+      <Filter>Core\Event\KeyboardEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Event\KeyboardEvents\KeyReleasedEvent.h">
+      <Filter>Core\Event\KeyboardEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Event\KeyboardEvents\KeyRepeatEvent.h">
+      <Filter>Core\Event\KeyboardEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Event\KeyboardEvents\KeyboardEvent.h">
+      <Filter>Core\Event\KeyboardEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Event\MouseEvents\MouseEvent.h">
+      <Filter>Core\Event\MouseEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Event\MouseEvents\MouseMovedEvent.h">
+      <Filter>Core\Event\MouseEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Event\MouseEvents\MousePressedEvent.h">
+      <Filter>Core\Event\MouseEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Event\MouseEvents\MouseReleasedEvent.h">
+      <Filter>Core\Event\MouseEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Event\MouseEvents\MouseScrollEvent.h">
+      <Filter>Core\Event\MouseEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Event\Subscriber.h">
+      <Filter>Core\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Event\WindowEvents\WindowCloseEvent.h">
+      <Filter>Core\Event\WindowEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Event\WindowEvents\WindowContentScaleEvent.h">
+      <Filter>Core\Event\WindowEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Event\WindowEvents\WindowFocusEvent.h">
+      <Filter>Core\Event\WindowEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Event\WindowEvents\WindowFramebufferEvent.h">
+      <Filter>Core\Event\WindowEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Event\WindowEvents\WindowMaximizedEvent.h">
+      <Filter>Core\Event\WindowEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Event\WindowEvents\WindowMovedEvent.h">
+      <Filter>Core\Event\WindowEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Event\WindowEvents\WindowResizeEvent.h">
+      <Filter>Core\Event\WindowEvents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Logger\Logger.h">
+      <Filter>Core\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Memory\Memory.h">
+      <Filter>Core\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\NonCopyable.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\View\View.h">
+      <Filter>Core\View</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\View\ViewSystem.h">
+      <Filter>Core\View</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Window\Window.h">
+      <Filter>Core\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Window\WindowProperties.h">
+      <Filter>Core\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entry.h" />
+    <ClInclude Include="src\Platform\OpenGL\SetupGL.h">
+      <Filter>Graphics\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\RenderSystem.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RadishEngine.h" />
+    <ClInclude Include="src\pch.h" />
+    <ClInclude Include="src\Platform\GLFW\Setup.h" />
+    <ClInclude Include="src\Platform\Platform.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Core\Engine\RadishEngine.cpp">
+      <Filter>Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\Logger\Logger.cpp">
+      <Filter>Core\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\View\ViewSystem.cpp">
+      <Filter>Core\View</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\Window\Window.cpp">
+      <Filter>Core\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\SetupGL.cpp">
+      <Filter>Graphics\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\RenderSystem.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pch.cpp" />
+  </ItemGroup>
+</Project>

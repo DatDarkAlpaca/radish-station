@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "radish-editor", "radish-editor\radish-editor.vcxproj", "{F45C98DB-601D-1412-2958-5D8F95D758EE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "imgui-bindings", "bindings\imgui-bindings.vcxproj", "{7B5B6EF8-6729-62FE-50BD-D2243C2A3E63}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "radish-engine", "radish-engine\radish-engine.vcxproj", "{430A4CDC-AFCA-C712-7805-1190E4840CEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F45C98DB-601D-1412-2958-5D8F95D758EE}.Debug|x64.ActiveCfg = Debug|x64
+		{F45C98DB-601D-1412-2958-5D8F95D758EE}.Debug|x64.Build.0 = Debug|x64
+		{F45C98DB-601D-1412-2958-5D8F95D758EE}.Release|x64.ActiveCfg = Release|x64
+		{F45C98DB-601D-1412-2958-5D8F95D758EE}.Release|x64.Build.0 = Release|x64
+		{7B5B6EF8-6729-62FE-50BD-D2243C2A3E63}.Debug|x64.ActiveCfg = Debug|x64
+		{7B5B6EF8-6729-62FE-50BD-D2243C2A3E63}.Debug|x64.Build.0 = Debug|x64
+		{7B5B6EF8-6729-62FE-50BD-D2243C2A3E63}.Release|x64.ActiveCfg = Release|x64
+		{7B5B6EF8-6729-62FE-50BD-D2243C2A3E63}.Release|x64.Build.0 = Release|x64
+		{430A4CDC-AFCA-C712-7805-1190E4840CEF}.Debug|x64.ActiveCfg = Debug|x64
+		{430A4CDC-AFCA-C712-7805-1190E4840CEF}.Debug|x64.Build.0 = Debug|x64
+		{430A4CDC-AFCA-C712-7805-1190E4840CEF}.Release|x64.ActiveCfg = Release|x64
+		{430A4CDC-AFCA-C712-7805-1190E4840CEF}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

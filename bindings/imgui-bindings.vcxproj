@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7B5B6EF8-6729-62FE-50BD-D2243C2A3E63}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>imgui-bindings</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\build\bin\Debug-windows-x86_64\imgui-bindings\</OutDir>
+    <IntDir>..\build\intermediate\Debug-windows-x86_64\imgui-bindings\</IntDir>
+    <TargetName>imgui-bindings</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <ExecutablePath>$(ProjectDir)..\..\..\.conan2\p\b\glfwd8ea506b6cd31\p\bin;$(ProjectDir)..\..\..\.conan2\p\b\fmtdc8a7747e5b99\p\bin;$(ProjectDir)..\..\..\.conan2\p\b\spdlod49c576bb8ed4\p\bin;$(ProjectDir)..\..\..\.conan2\p\b\glad2795ec90d739f\p\bin;$(ProjectDir)..\..\..\.conan2\p\b\imgui0279dc9a9f868\p\bin;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\build\bin\Release-windows-x86_64\imgui-bindings\</OutDir>
+    <IntDir>..\build\intermediate\Release-windows-x86_64\imgui-bindings\</IntDir>
+    <TargetName>imgui-bindings</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <ExecutablePath>$(ProjectDir)..\..\..\.conan2\p\glfweacdc550e8335\p\bin;$(ProjectDir)..\..\..\.conan2\p\fmt99c02610800b9\p\bin;$(ProjectDir)..\..\..\.conan2\p\spdlo585c949eca222\p\bin;$(ProjectDir)..\..\..\.conan2\p\b\glad39715e4bdf27b\p\bin;$(ProjectDir)..\..\..\.conan2\p\imgui1895edcc2db9a\p\bin;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>RDS_DEBUG;SPDLOG_FMT_EXTERNAL;SPDLOG_COMPILED_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\.conan2\p\b\glfwd8ea506b6cd31\p\include;..\..\..\.conan2\p\b\fmtdc8a7747e5b99\p\include;..\..\..\.conan2\p\b\spdlod49c576bb8ed4\p\include;..\..\..\.conan2\p\b\glad2795ec90d739f\p\include;..\..\..\.conan2\p\glmb8583f8d3b716\p\include;..\..\..\.conan2\p\b\imgui0279dc9a9f868\p\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;gdi32.lib;fmtd.lib;spdlogd.lib;glad.lib;imgui.lib;imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\.conan2\p\b\glfwd8ea506b6cd31\p\lib;..\..\..\.conan2\p\b\fmtdc8a7747e5b99\p\lib;..\..\..\.conan2\p\b\spdlod49c576bb8ed4\p\lib;..\..\..\.conan2\p\b\glad2795ec90d739f\p\lib;..\..\..\.conan2\p\b\imgui0279dc9a9f868\p\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>SPDLOG_FMT_EXTERNAL;SPDLOG_COMPILED_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\.conan2\p\glfweacdc550e8335\p\include;..\..\..\.conan2\p\fmt99c02610800b9\p\include;..\..\..\.conan2\p\spdlo585c949eca222\p\include;..\..\..\.conan2\p\b\glad39715e4bdf27b\p\include;..\..\..\.conan2\p\glmb8583f8d3b716\p\include;..\..\..\.conan2\p\imgui1895edcc2db9a\p\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;gdi32.lib;fmt.lib;spdlog.lib;glad.lib;imgui.lib;imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\.conan2\p\glfweacdc550e8335\p\lib;..\..\..\.conan2\p\fmt99c02610800b9\p\lib;..\..\..\.conan2\p\spdlo585c949eca222\p\lib;..\..\..\.conan2\p\b\glad39715e4bdf27b\p\lib;..\..\..\.conan2\p\imgui1895edcc2db9a\p\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="imgui\imgui_impl_glfw.h" />
+    <ClInclude Include="imgui\imgui_impl_opengl3.h" />
+    <ClInclude Include="imgui\imgui_impl_opengl3_loader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="imgui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="imgui\imgui_impl_opengl3.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

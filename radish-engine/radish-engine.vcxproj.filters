@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dependencies">
+      <UniqueIdentifier>{8CAD9F58-7810-2FFD-2196-67B30DD8FA7F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies\imgui-bindings">
+      <UniqueIdentifier>{314C8E5C-9D59-BC42-2640-B82D924C88F9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\dependencies\imgui-bindings\imgui_impl_glfw.h">
+      <Filter>dependencies\imgui-bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dependencies\imgui-bindings\imgui_impl_opengl3.h">
+      <Filter>dependencies\imgui-bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pch.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\dependencies\imgui-bindings\imgui_impl_glfw.cpp">
+      <Filter>dependencies\imgui-bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dependencies\imgui-bindings\imgui_impl_opengl3.cpp">
+      <Filter>dependencies\imgui-bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

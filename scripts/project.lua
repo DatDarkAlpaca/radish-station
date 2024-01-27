@@ -7,9 +7,6 @@ function create_project(project_name, project_kind)
         targetdir(binaries_path .. "/%{prj.name}")
         objdir(intermediate_path .. "/%{prj.name}")
 
-        pchheader "pch.h"
-        pchsource "src/pch.cpp"
-
         files {
             "src/*.cpp",
             "src/*.hpp",

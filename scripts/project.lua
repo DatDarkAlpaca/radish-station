@@ -8,10 +8,10 @@ function create_project(project_name, project_kind)
         objdir(intermediate_path .. "/%{prj.name}")
 
         files {
-            "src/*.cpp",
-            "src/*.hpp",
-            "src/*.c",
-            "src/*.h",
+            "**.cpp",
+            "**.hpp",
+            "**.c",
+            "**.h",
         }
     
         includedirs {

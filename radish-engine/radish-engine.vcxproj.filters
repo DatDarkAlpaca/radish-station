@@ -10,6 +10,27 @@
     <Filter Include="src">
       <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Core">
+      <UniqueIdentifier>{A5D31CCF-91A0-77DA-BAB9-6582A6E5AC68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Core\Resource">
+      <UniqueIdentifier>{5C9F0E62-C8B5-0CF8-112D-98197D82DD7F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Core\Window">
+      <UniqueIdentifier>{ECB40BB5-5840-7979-6151-FC6DCD5BD579}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Graphics">
+      <UniqueIdentifier>{0D564864-F9B8-D708-A23E-10BF8E80A38B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Graphics\Objects">
+      <UniqueIdentifier>{C6B12FF2-B240-B9BB-5B5F-CDB647CDC961}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Graphics\Types">
+      <UniqueIdentifier>{71AF3CE7-5D93-FD3C-C6F3-F78FB2F6E7BE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Renderer">
+      <UniqueIdentifier>{73D1DFBF-5F34-6F64-08BA-A71AF4FB3AE7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\dependencies\imgui-bindings\imgui_impl_glfw.h">
@@ -18,9 +39,55 @@
     <ClInclude Include="..\dependencies\imgui-bindings\imgui_impl_opengl3.h">
       <Filter>dependencies\imgui-bindings</Filter>
     </ClInclude>
+    <ClInclude Include="src\Common.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Engine.h">
+      <Filter>src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\File.h">
+      <Filter>src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Resource\ResourceHolder.h">
+      <Filter>src\Core\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Window\Window.h">
+      <Filter>src\Core\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Window\WindowProperties.h">
+      <Filter>src\Core\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\GraphicsConfig.h">
+      <Filter>src\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\GraphicsSystem.h">
+      <Filter>src\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\Objects\Buffer.h">
+      <Filter>src\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\Objects\Pipeline.h">
+      <Filter>src\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\Objects\Shader.h">
+      <Filter>src\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\Types\BufferMask.h">
+      <Filter>src\Graphics\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RadishEngine.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderer\BaseRenderer.h">
+      <Filter>src\Renderer</Filter>
+    </ClInclude>
     <ClInclude Include="src\pch.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="src\Core\Transform\Transform.h" />
+    <ClInclude Include="src\Graphics\Shape\Triangle.h" />
+    <ClInclude Include="src\Graphics\Shape\Quad.h" />
+    <ClInclude Include="src\Graphics\Shape\Shape.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\dependencies\imgui-bindings\imgui_impl_glfw.cpp">
@@ -29,8 +96,20 @@
     <ClCompile Include="..\dependencies\imgui-bindings\imgui_impl_opengl3.cpp">
       <Filter>dependencies\imgui-bindings</Filter>
     </ClCompile>
-    <ClCompile Include="src\Main.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="src\Core\Window\Window.cpp">
+      <Filter>src\Core\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\GraphicsSystem.cpp">
+      <Filter>src\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\Objects\Pipeline.cpp">
+      <Filter>src\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\Objects\Shader.cpp">
+      <Filter>src\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderer\BaseRenderer.cpp">
+      <Filter>src\Renderer</Filter>
     </ClCompile>
     <ClCompile Include="src\pch.cpp">
       <Filter>src</Filter>

@@ -14,6 +14,7 @@ workspace "radish-station"
         "Release"
     }
 
-    startproject "radish-engine"
+    startproject "radish-editor"
 
 include "radish-engine/engine.lua"
+include "radish-editor/editor.lua"
